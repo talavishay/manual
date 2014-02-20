@@ -1,0 +1,15 @@
+<?php
+/**
+ * @file
+ * Code for the manual feature.
+ */
+
+include_once 'manual.features.inc';
+
+function manual_overlay_child_initialize() {
+  // Add our custom JavaScript.
+  drupal_add_css(drupal_get_path('module', 'manual') . '/css/user-manual-overlay-child.css');
+  drupal_add_js(drupal_get_path('module', 'manual') . '/js/user-manual-overlay-child.js');
+ drupal_add_library('system', 'ui.dialog');
+}
+
