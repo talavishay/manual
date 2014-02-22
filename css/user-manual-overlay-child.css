@@ -1,3 +1,51 @@
-body.overlay.node-type-manual #overlay{
-background:red;
+#overlay #section-header,
+#overlay .site-name-slogan{
+display:none;
+}
+#overlay #breadcrumb .breadcrumb .last a {
+text-shadow: none;
+color: black;
+}
+#overlay #zone-content,
+#overlay #block-system-main{
+width:100%;
+margin:0px;
+}
+#overlay .container-12 .grid-12 {
+width: 95%;
+}
+
+body.overlay.page-user-manual #overlay #region-content,
+body.overlay.page-user-manual #overlay #page-title,
+body.overlay.node-type-manual #overlay #page-title{
+direction:rtl;
+}
+body.overlay.page-user-manual #overlay .node-unpublished ,
+body.overlay.node-type-manual #overlay .node-unpublished {
+background-color: #fff;
+}
+body.overlay.node-type-manual #overlay .submitted{
+display: none;
+}
+#overlay{
+top:10px !important;
+}
+#overlay #overlay-tabs li{
+line-height: 27px;
+margin: 0px 1px;
+}
+#overlay img:hover{
+	cursor: pointer;
+}
+.view-manual .field-content > a {
+  font-size: 18px;
+  color: #FC6704;
+}
+.view-manual .views-row {
+    
+    margin: 10px 0;
+}
+
+.view-manual li {
+    margin-bottom: 10px;
 }

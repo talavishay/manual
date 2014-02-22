@@ -43,7 +43,20 @@ PreviewImage = function(uri) {
 //      title:' uriParts[uriParts.length - 1]'
     });
   });               
-console.log($("img"));
+//console.log($("img"));
+
+var f= this;
+(function (f) {
+	var links =jQuery("p:first-child a", f).bind("click", function(e){
+	e.preventDefault()
+	var name = jQuery(e.currentTarget).attr("href");//.replace(/#/i, ""));
+	var offset = jQuery(name, f).offset().top;
+	jQuery(document).scrollTop(offset-40);
+	return false;
+});
+})(f);
+
+//f.scrollTop(jQuery("#style", f).offset().top-40)
 //###############################################3
 
 
